@@ -191,6 +191,7 @@ public class MainActivity extends AppCompatActivity {
                             // Set the download URL to the message box, so that the user can send it to the database
                             FriendlyMessage friendlyMessage = new FriendlyMessage(null, mUsername, downloadUrl.toString());
                             mMessagesDatabaseReference.push().setValue(friendlyMessage);
+                            //should be getDownloadUrl()
                         }
                     });
         }
